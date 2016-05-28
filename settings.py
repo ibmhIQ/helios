@@ -164,8 +164,8 @@ VOTER_UPLOAD_REL_PATH = "voters/%Y/%m/%d"
 
 
 # Change your email settings
-DEFAULT_FROM_EMAIL = get_from_env('DEFAULT_FROM_EMAIL', 'ben@adida.net')
-DEFAULT_FROM_NAME = get_from_env('DEFAULT_FROM_NAME', 'Ben for Helios')
+DEFAULT_FROM_EMAIL = get_from_env('DEFAULT_FROM_EMAIL', 'helios-voting@openmailbox.org')
+DEFAULT_FROM_NAME = get_from_env('DEFAULT_FROM_NAME', 'Helios Voting - psych-it.cdc.informatik.tu-darmstadt.de')
 SERVER_EMAIL = '%s <%s>' % (DEFAULT_FROM_NAME, DEFAULT_FROM_EMAIL)
 
 LOGIN_URL = '/auth/'
