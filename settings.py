@@ -16,7 +16,7 @@ DEBUG = (get_from_env('DEBUG', '1') == '1')
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    ('Ben Adida', 'ben@adida.net'),
+    ('Lukas Roehrig', 'lukas.r@mail.com'),
 )
 
 MANAGERS = ADMINS
