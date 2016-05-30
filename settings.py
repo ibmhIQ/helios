@@ -242,7 +242,7 @@ CLEVER_CLIENT_SECRET = get_from_env('CLEVER_CLIENT_SECRET', "")
 # email server
 EMAIL_HOST = get_from_env('EMAIL_HOST', 'smtp.openmailbox.org')
 EMAIL_PORT = int(get_from_env('EMAIL_PORT', "465"))
-EMAIL_HOST_USER = get_from_env('EMAIL_HOST_USER', 'helios-voting')
+EMAIL_HOST_USER = get_from_env('EMAIL_HOST_USER', 'helios-voting@openmailbox.org')
 EMAIL_HOST_PASSWORD = get_from_env('EMAIL_HOST_PASSWORD', 'skj872n872NXDzd92')
 EMAIL_USE_TLS = (get_from_env('EMAIL_USE_TLS', '1') == '1')
 
