@@ -244,7 +244,7 @@ EMAIL_HOST = get_from_env('EMAIL_HOST', 'smtp.gmail.com')
 EMAIL_PORT = int(get_from_env('EMAIL_PORT', "465"))
 EMAIL_HOST_USER = get_from_env('EMAIL_HOST_USER', 'proxyhelios@gmail.com')
 EMAIL_HOST_PASSWORD = get_from_env('EMAIL_HOST_PASSWORD', 'helios56')
-EMAIL_USE_TLS = (get_from_env('EMAIL_USE_TLS', '0') == '1')
+EMAIL_USE_TLS = (get_from_env('EMAIL_USE_TLS', '1') == '1')
 
 # to use AWS Simple Email Service
 # in which case environment should contain
