@@ -164,7 +164,7 @@ VOTER_UPLOAD_REL_PATH = "voters/%Y/%m/%d"
 
 
 # Change your email settings
-DEFAULT_FROM_EMAIL = get_from_env('DEFAULT_FROM_EMAIL', 'proxy-helios@openmailbox.org')
+DEFAULT_FROM_EMAIL = get_from_env('DEFAULT_FROM_EMAIL', 'proxyhelios@gmx.de')
 DEFAULT_FROM_NAME = get_from_env('DEFAULT_FROM_NAME', 'Helios Voting')
 SERVER_EMAIL = '%s <%s>' % (DEFAULT_FROM_NAME, DEFAULT_FROM_EMAIL)
 
@@ -240,9 +240,9 @@ CLEVER_CLIENT_ID = get_from_env('CLEVER_CLIENT_ID', "")
 CLEVER_CLIENT_SECRET = get_from_env('CLEVER_CLIENT_SECRET', "")
 
 # email server
-EMAIL_HOST = get_from_env('EMAIL_HOST', 'smtp.openmailbox.org')
-EMAIL_PORT = int(get_from_env('EMAIL_PORT', "465"))
-EMAIL_HOST_USER = get_from_env('EMAIL_HOST_USER', 'proxy-helios@openmailbox.org')
+EMAIL_HOST = get_from_env('EMAIL_HOST', 'mail.gmx.net')
+EMAIL_PORT = int(get_from_env('EMAIL_PORT', "587"))
+EMAIL_HOST_USER = get_from_env('EMAIL_HOST_USER', 'proxyhelios@gmx.de')
 EMAIL_HOST_PASSWORD = get_from_env('EMAIL_HOST_PASSWORD', 'helios56')
 EMAIL_USE_TLS = (get_from_env('EMAIL_USE_TLS', '1') == '1')
 
