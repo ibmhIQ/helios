@@ -243,7 +243,7 @@ CLEVER_CLIENT_SECRET = get_from_env('CLEVER_CLIENT_SECRET', "")
 EMAIL_HOST = get_from_env('EMAIL_HOST', 'mail.gmx.net')
 EMAIL_PORT = int(get_from_env('EMAIL_PORT', "587"))
 EMAIL_HOST_USER = get_from_env('EMAIL_HOST_USER', 'proxyhelios@gmx.de')
-EMAIL_HOST_PASSWORD = get_from_env('EMAIL_HOST_PASSWORD', 'helios56')
+EMAIL_HOST_PASSWORD = get_from_env('EMAIL_HOST_PASSWORD', 'Zq5ABfQb')
 EMAIL_USE_TLS = (get_from_env('EMAIL_USE_TLS', '1') == '1')
 
 # to use AWS Simple Email Service
