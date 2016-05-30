@@ -164,8 +164,8 @@ VOTER_UPLOAD_REL_PATH = "voters/%Y/%m/%d"
 
 
 # Change your email settings
-DEFAULT_FROM_EMAIL = get_from_env('DEFAULT_FROM_EMAIL', 'helios-voting@openmailbox.org')
-DEFAULT_FROM_NAME = get_from_env('DEFAULT_FROM_NAME', 'Helios Voting - psych-it.cdc.informatik.tu-darmstadt.de')
+DEFAULT_FROM_EMAIL = get_from_env('DEFAULT_FROM_EMAIL', 'proxyhelios@gmail.com')
+DEFAULT_FROM_NAME = get_from_env('DEFAULT_FROM_NAME', 'proxyhelios@gmail.com')
 SERVER_EMAIL = '%s <%s>' % (DEFAULT_FROM_NAME, DEFAULT_FROM_EMAIL)
 
 LOGIN_URL = '/auth/'
@@ -240,10 +240,10 @@ CLEVER_CLIENT_ID = get_from_env('CLEVER_CLIENT_ID', "")
 CLEVER_CLIENT_SECRET = get_from_env('CLEVER_CLIENT_SECRET', "")
 
 # email server
-EMAIL_HOST = get_from_env('EMAIL_HOST', 'smtp.openmailbox.org')
+EMAIL_HOST = get_from_env('EMAIL_HOST', 'smtp.gmail.com')
 EMAIL_PORT = int(get_from_env('EMAIL_PORT', "465"))
-EMAIL_HOST_USER = get_from_env('EMAIL_HOST_USER', 'helios-voting@openmailbox.org')
-EMAIL_HOST_PASSWORD = get_from_env('EMAIL_HOST_PASSWORD', 'skj872n872NXDzd92')
+EMAIL_HOST_USER = get_from_env('EMAIL_HOST_USER', 'proxyhelios@gmail.com')
+EMAIL_HOST_PASSWORD = get_from_env('EMAIL_HOST_PASSWORD', 'helios56')
 EMAIL_USE_TLS = (get_from_env('EMAIL_USE_TLS', '1') == '1')
 
 # to use AWS Simple Email Service
