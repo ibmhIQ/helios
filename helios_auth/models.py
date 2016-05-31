@@ -32,6 +32,9 @@ class User(models.Model):
   
   # administrator
   admin_p = models.BooleanField(default=False)
+  
+  # proxy
+  proxy = models.BooleanField(default=False)
 
   class Meta:
     unique_together = (('user_type', 'user_id'),)
