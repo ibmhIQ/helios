@@ -99,6 +99,10 @@ Your password: %s
     send_mail('password reminder', body, settings.SERVER_EMAIL, ["%s <%s>" % (user.info['name'], user.info['email'])], fail_silently=False)
     
     return HttpResponseRedirect(return_url)
+	
+	
+
+
   
 def get_auth_url(request, redirect_url = None):
   return reverse(password_login_view)
