@@ -779,7 +779,6 @@ class VoterFile(models.Model):
 
     return num_voters
 
-
     
 class Voter(HeliosModel):
   election = models.ForeignKey(Election)
