@@ -761,7 +761,7 @@ class VoterFile(models.Model):
       if not existing_voter:
         voter_uuid = str(uuid.uuid4())
         existing_voter = Voter(uuid= voter_uuid, user = None, voter_login_id = voter['voter_id'],
-                      voter_name = voter['name'], voter_email = voter['email'], election = election, proxy = False)
+                      voter_name = voter['name'], voter_email = voter['email'], election = election)
         existing_voter.generate_password()
         new_voters.append(existing_voter)
         existing_voter.save()
