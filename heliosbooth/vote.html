@@ -35,6 +35,8 @@
 <div id="header">
 </div>
 
+{% if voter.alias %}{{voter.alias}}{% else %}{{voter.name}}{% endif %}
+
 <script language="javascript">
 // utils
 BOOTH = {};
