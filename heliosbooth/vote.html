@@ -29,7 +29,7 @@
 <body>
 <div id="wrapper">
 <span style="float:right; padding: 7px 15px 5px 10px;">[<a href="javascript:BOOTH.exit();">exit</a>]</span>
-<div id="banner">(You are proxy!)   Helios Voting Booth </div>
+<div id="banner"> Helios Voting Booth </div>
 <div id="content">
 
 <div id="header">
@@ -51,7 +51,6 @@ BOOTH.setup_templates = function() {
     $('#seal_div').setTemplateURL("templates/seal.html" + cache_bust);
     $('#audit_div').setTemplateURL("templates/audit.html" + cache_bust);
     $('#footer').setTemplateURL("templates/footer.html" + cache_bust);
-	$('#choice').setTemplateURL("templates/choice.html" + cache_bust);
 
     BOOTH.templates_setup_p = true;
 };
