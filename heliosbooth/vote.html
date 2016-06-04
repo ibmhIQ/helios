@@ -52,6 +52,7 @@ BOOTH.setup_templates = function() {
     $('#seal_div').setTemplateURL("templates/seal.html" + cache_bust);
     $('#audit_div').setTemplateURL("templates/audit.html" + cache_bust);
     $('#footer').setTemplateURL("templates/footer.html" + cache_bust);
+	$('#proxyact').setTemplateURL("templates/proxyact.html" + cache_bust);
 
     BOOTH.templates_setup_p = true;
 };
@@ -209,8 +210,9 @@ BOOTH.show_election = function() {
   BOOTH.show($('#election_div')).processTemplate({'election' : BOOTH.election});
 };
 
-BOOTH.show_test = function() {
-  BOOTH.show($('#footer')).processTemplate({'footer' : BOOTH.footer});
+// insert FK 0604
+BOOTH.show_proxyact = function() {
+  BOOTH.show($('#proxyact')).processTemplate({'proxyact' : BOOTH.proxyact});
 };
 
 BOOTH.launch_async_encryption_answer = function(question_num) {
