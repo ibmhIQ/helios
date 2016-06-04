@@ -206,13 +206,10 @@ BOOTH.show = function(el) {
   return el;
 };
 
-BOOTH.show_election = function() {
-  BOOTH.show($('#proxyact')).processTemplate({'proxyact' : BOOTH.proxyact});
-};
 
-//BOOTH.show_election = function() {
-//  BOOTH.show($('#election_div')).processTemplate({'election' : BOOTH.election});
-//};
+BOOTH.show_election = function() {
+BOOTH.show($('#election_div')).processTemplate({'election' : BOOTH.election});
+};
 
 // insert FK 0604
 BOOTH.show_proxyact = function() {
