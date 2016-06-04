@@ -212,7 +212,7 @@ BOOTH.show_election = function() {
 
 // insert FK 0604
 BOOTH.show_proxyact = function() {
-  BOOTH.show($('#proxyact')).processTemplate({'proxyact_test' : BOOTH.proxyact});
+  $('#proxyact').processTemplate({'proxyact' : BOOTH.election, 'election_metadata': BOOTH.election_metadata});
 };
 
 BOOTH.launch_async_encryption_answer = function(question_num) {
