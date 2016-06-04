@@ -209,6 +209,10 @@ BOOTH.show_election = function() {
   BOOTH.show($('#election_div')).processTemplate({'election' : BOOTH.election});
 };
 
+BOOTH.show_test = function() {
+  BOOTH.show($('#footer')).processTemplate({'footer' : BOOTH.footer});
+};
+
 BOOTH.launch_async_encryption_answer = function(question_num) {
    BOOTH.answer_timestamps[question_num] = new Date().getTime();
    BOOTH.encrypted_answers[question_num] = null;
