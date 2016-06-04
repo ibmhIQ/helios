@@ -212,6 +212,7 @@ BOOTH.show_election = function() {
 
 // insert FK 0604
 BOOTH.show_proxyact = function() {
+  $('#proxyact').setTemplateURL("/static/heliosbooth/templates/proxyact.html");
   $('#proxyact').processTemplate({'proxyact' : BOOTH.proxyact});
 };
 
