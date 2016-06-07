@@ -211,11 +211,6 @@ BOOTH.show_election = function() {
 BOOTH.show($('#election_div')).processTemplate({'election' : BOOTH.election});
 };
 
-// insert FK 0604
-BOOTH.show_proxyact = function() {
-  $('#proxyact').setTemplateURL("/static/heliosbooth/templates/proxyact.html");
-  BOOTH.show($('#proxyact')).processTemplate({'proxyact' : BOOTH.proxyact});
-};
 
 BOOTH.launch_async_encryption_answer = function(question_num) {
    BOOTH.answer_timestamps[question_num] = new Date().getTime();
